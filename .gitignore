@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# Virtual environments & secrets
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Databases & runtime data
+*.db
+*.sqlite
+*.sqlite3
+backend/phishscope.db
+*.log
+test_*.pdf
+test_*.png
+test_page_*.png
+
+# Frontend dependencies
+node_modules/
+frontend/node_modules/
+.npm
+npm-debug.log*
+yarn-debug.log*
+
+# IDE & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

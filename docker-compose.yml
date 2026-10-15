@@ -1,0 +1,55 @@
+services:
+  phishscope:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phishscope-app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PROJECT_NAME=PhishScope
+      - DATABASE_URL=postgresql+asyncpg://phishscope:phishscope_secure_pass@postgres:5432/phishscope_db
+      - SECRET_KEY=phishscope-production-grade-soc-analyst-secret-key-32b-min
+      - VIRUSTOTAL_API_KEY=${VIRUSTOTAL_API_KEY:-}
+      - URLHAUS_API_KEY=${URLHAUS_API_KEY:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    volumes:
+      - phishscope-data:/app/data
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: phishscope-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=phishscope
+      - POSTGRES_PASSWORD=phishscope_secure_pass
+      - POSTGRES_DB=phishscope_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U phishscope -d phishscope_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: phishscope-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  postgres-data:
+  redis-data:
+  phishscope-data:

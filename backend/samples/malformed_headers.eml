@@ -1,0 +1,8 @@
+Subject: =?ISO-8859-1?Q?Malformed_Spam_Without_Proper_Headers?=
+Date: InvalidDateString12345
+X-Mailer: CustomSpamScript/1.0
+Received: by corrupt-host (broken syntax
+
+This is a malformed raw email payload missing standard From and To headers,
+with corrupted boundaries and irregular timestamp strings to verify that the
+PhishScope parsing engine operates defensively without unhandled exceptions.

@@ -1,0 +1,51 @@
+From: "Tech Security Digest" <newsletter@techsecuritydigest.com>
+To: analyst@phishscope.local
+Subject: Weekly Cybersecurity Briefing: October 2026 Edition
+Date: Thu, 15 Oct 2026 09:30:00 +0000
+Message-ID: <digest-20261015-093000@techsecuritydigest.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_Legit_12345"
+Authentication-Results: mx.phishscope.local;
+ spf=pass (sender IP is 198.51.100.45) smtp.mailfrom=newsletter@techsecuritydigest.com;
+ dkim=pass (signature was verified) header.d=techsecuritydigest.com;
+ dmarc=pass action=none header.from=techsecuritydigest.com;
+Received-SPF: pass (mx.phishscope.local: domain of newsletter@techsecuritydigest.com designates 198.51.100.45 as permitted sender)
+Received: from mail-out.techsecuritydigest.com (mail-out.techsecuritydigest.com [198.51.100.45])
+ by mx.phishscope.local (Postfix) with ESMTPS id 4StF9r10Zjz
+ for <analyst@phishscope.local>; Thu, 15 Oct 2026 09:30:05 +0000
+
+------=_Part_Legit_12345
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to the Tech Security Digest weekly update.
+
+This week we discuss modern detection strategies, threat modeling for containerized environments, and cloud identity architecture.
+
+Read the full edition online at:
+https://techsecuritydigest.com/articles/2026-10-roundup
+
+To manage your newsletter preferences or unsubscribe:
+https://techsecuritydigest.com/preferences
+
+Regards,
+The Editorial Team
+------=_Part_Legit_12345
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+<head><title>Tech Security Digest</title></head>
+<body style="font-family: Arial, sans-serif; color: #333333;">
+  <h2>Tech Security Digest — Weekly Briefing</h2>
+  <p>Here is your weekly curation of enterprise defensive architecture and threat intelligence analysis.</p>
+  <ul>
+    <li><a href="https://techsecuritydigest.com/articles/2026-10-roundup">Modern Threat Detection Paradigms</a></li>
+    <li><a href="https://techsecuritydigest.com/articles/identity-governance">Zero Trust Cloud IAM Controls</a></li>
+  </ul>
+  <hr/>
+  <p style="font-size: 12px; color: #777;">You received this because you subscribed at techsecuritydigest.com. <a href="https://techsecuritydigest.com/preferences">Unsubscribe</a></p>
+</body>
+</html>
+------=_Part_Legit_12345--
